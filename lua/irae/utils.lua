@@ -36,7 +36,7 @@ function M.hex_to_rgb(str)
 end
 
 function M.rgb_to_hex(r, g, b)
-    return '#' .. string.format('%x', r) .. string.format('%x', g) .. string.format('%x', b)
+    return '#' .. string.format('%02x', r) .. string.format('%02x', g) .. string.format('%02x', b)
 end
 
 function M.rgb_to_hsv(r, g, b)
