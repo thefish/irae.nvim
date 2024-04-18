@@ -33,11 +33,12 @@ function C.extend_palette()
 
     -- Cursorline Background
     if options.cursorline.theme == 'light' then
-        options.cursorline.bg = C.gray1
+        options.cursorline.bg = C.gray3
     else
-        options.cursorline.bg = C.black0
+        options.cursorline.bg = C.gray1
     end
 
+    -- fixme
     C.bg_visual = (options.transparent_bg and options.cursorline.bg)
         or U.blend(options.cursorline.bg, C.bg, options.cursorline.blend)
 

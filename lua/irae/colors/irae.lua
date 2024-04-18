@@ -3,10 +3,10 @@ local palette = {
     none = 'NONE',
 
     -- Blacks. Not in base Nord.
-    black0 = '#08080A',
-    black1 = '#0C0C0E',
+    black0 = '#08080a',
+    black1 = '#0c0c0e',
     -- Slightly darker than bg.  Very useful for certain popups
-    black2 = '#0A0A0C',
+    black2 = '#0a0a0c',
 
     -- Grays
     -- This color is used on their website's dark theme.
@@ -64,7 +64,7 @@ local palette = {
         dim = '#50759b',
     },
     sandy = {
-        base = '#d3a476',
+        base = '#deb893',
         bright = '#deb893',
         dim = '#886a4e',
     },
