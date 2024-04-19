@@ -45,7 +45,6 @@ local palette = {
         dim = '#80B3B2',
     },
 
-    -- Aurora.
     -- These colors are used a lot, so we need variations for them.
     -- Base colors are from original Nord palette.
     red = {
@@ -53,11 +52,11 @@ local palette = {
         bright = '#C5727A',
         dim = '#B74E58',
     },
---     orange = {
---         base = '#D08770',
---         bright = '#D79784',
---         dim = '#CB775D',
---     },
+    --     orange = {
+    --         base = '#D08770',
+    --         bright = '#D79784',
+    --         dim = '#CB775D',
+    --     },
     light_blue = {
         base = '#6699cc',
         bright = '#9cbadd',

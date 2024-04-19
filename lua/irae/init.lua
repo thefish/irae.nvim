@@ -9,7 +9,7 @@ function M.load(opts)
     end
 
     if opts then
-       require('irae.config').setup(opts)
+        require('irae.config').setup(opts)
     end
 
     require('irae.colors').extend_palette()
@@ -22,4 +22,3 @@ end
 M.setup = require('irae.config').setup
 
 return M
-

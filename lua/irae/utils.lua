@@ -20,7 +20,7 @@ function M.none()
     return 'NONE'
 end
 
-function M.merge (table1, table2)
+function M.merge(table1, table2)
     if table1 == table2 == nil then return {} end
     if table1 == nil then
         return table2
