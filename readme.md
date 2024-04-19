@@ -37,7 +37,7 @@ Plug 'thefish/irae.nvim', { 'branch': 'master' }
 
 # Configuration
 
-Nordic will use the default values, unless `setup` is called. Below is the default configuration.
+Theme will use the default values, unless `setup` is called. Below is the default configuration.
 
 ```lua
 require 'irae' .setup {
