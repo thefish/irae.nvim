@@ -52,11 +52,11 @@ local palette = {
         bright = '#C5727A',
         dim = '#B74E58',
     },
-    --     orange = {
-    --         base = '#D08770',
-    --         bright = '#D79784',
-    --         dim = '#CB775D',
-    --     },
+    yellow = {
+        base = '#fff0c6',
+        bright = '#ffd864',
+        dim = '#dfb946',
+    },
     light_blue = {
         base = '#6699cc',
         bright = '#9cbadd',

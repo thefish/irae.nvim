@@ -27,7 +27,7 @@ function M.get_groups()
     G.Title = { fg = C.sandy.base }
     G.Builtin = { fg = C.blue0 }
     G.Identifier = { fg = C.fg }                                   -- (preferred) any variable name
-    G.Function = { fg = C.blue2 }                                  -- function name (also: methods for classes)
+    G.Function = { fg = C.yellow.base }                            -- function name (also: methods for classes)
     G.Keyword = { fg = C.light_blue.base, bold = O.bold_keywords } --  any other keyword
     G.Statement = { link = 'Keyword' }                             -- (preferred) any statement
     G.Conditional = { link = 'Keyword' }                           --  if, then, else, endif, switch, etc.
