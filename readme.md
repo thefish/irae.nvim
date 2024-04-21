@@ -1,6 +1,6 @@
 # Irae
 
-Neovim colorscheme loosely based from ir_black and code derived from [Nordic](https://github.com/AlexvZyl/nordic.nvim).
+Neovim colorscheme loosely based on ir_black and code derived from [Nordic](https://github.com/AlexvZyl/nordic.nvim).
 
 Idea was to bring back days of glory of ir_black, but in dimmer and more pastel manner.
 
@@ -111,7 +111,8 @@ require 'irae' .setup {
 
 # Acknowledgements
 
+- [twerth/ir_black](https://github.com/twerth/ir_black) Todd Werth who started it.
 - [AlexvZyl/nordic.nvim](https://github.com/AlexvZyl/nordic.nvim) lua code framework and general idea.
 - [folke/tokyonight](https://github.com/folke/tokyonight.nvim) served as an excellent example and template to create a Neovim theme.
-- [Aonodensetsu/prev_gen](https://github.com/Aonodensetsu/prev_gen) was used to create the palette preview.
+
 
