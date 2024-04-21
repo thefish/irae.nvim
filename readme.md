@@ -6,6 +6,10 @@ Idea was to bring back days of glory of ir_black, but in dimmer and more pastel 
 
 Pull requests are welcome!
 
+
+![Irae neovim theme](http://pix.zaar.be/clip4me/vim-irae.png)
+
+
 # Installation
 
 [lazy.nvim](https://github.com/folke/lazy.nvim):
