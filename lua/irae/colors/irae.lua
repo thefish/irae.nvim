@@ -53,9 +53,9 @@ local palette = {
         dim = '#B74E58',
     },
     dullgreen = {
-        base = '#194d33',
-        bright = '#638571',
-        dim = '#173c29',
+        base = '#638571',
+        bright = '#c9d5cd',
+        dim = '#194d33',
     },
     yellow = {
         base = '#fff0c6',
