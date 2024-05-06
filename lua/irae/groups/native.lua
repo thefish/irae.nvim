@@ -22,12 +22,12 @@ function M.get_groups()
     G.Character = { fg = C.green.base }    --  a character constant: 'c', '\n'
     -- G.Variable = { fg = C.fg }
     G.Variable = { fg = C.blue2 }
-    G.Namespace = { fg = C.sandy.dim }
+    G.Namespace = { fg = C.yellow.dim }
     G.Field = { fg = C.cyan.base }
-    G.Title = { fg = C.sandy.base }
+    G.Title = { fg = C.yellow.base }
     G.Builtin = { fg = C.blue0 }
     G.Identifier = { fg = C.fg }                                   -- (preferred) any variable name
-    G.Function = { fg = C.yellow.base }                            -- function name (also: methods for classes)
+    G.Function = { fg = C.sandy.base }                             -- function name (also: methods for classes)
     G.Keyword = { fg = C.light_blue.base, bold = O.bold_keywords } --  any other keyword
     G.Statement = { link = 'Keyword' }                             -- (preferred) any statement
     G.Conditional = { link = 'Keyword' }                           --  if, then, else, endif, switch, etc.
@@ -41,7 +41,7 @@ function M.get_groups()
     G.Define = { link = 'Macro' }                                  --   preprocessor #define
     G.PreCondit = { link = 'Macro' }                               --  preprocessor #if, #else, #endif, etc.
     G.Comment = { fg = C.gray4, italic = O.italic_comments }
-    G.Type = { fg = C.sandy.base }                                 -- (preferred) int, long, char, etc.
+    G.Type = { fg = C.yellow.base }                                -- (preferred) int, long, char, etc.
     G.StorageClass = { link = 'Keyword' }                          -- static, register, volatile, etc.
     G.Structure = { link = 'Type' }                                --  struct, union, enum, etc.
     G.Typedef = { link = 'Type' }                                  --  A typedef
@@ -55,14 +55,14 @@ function M.get_groups()
     G.Bold = { bold = true }
     G.Italic = { italic = true }
     -- ("Ignore", below, may be invisible...)
-    G.Ignore = { fg = C.gray2 }                  -- (preferred) left blank, hidden  |hl-Ignore|
-    G.Error = { fg = C.error }                   -- (preferred) any erroneous construct
-    G.Todo = { bg = C.sandy.dim, fg = C.black0 } -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+    G.Ignore = { fg = C.gray2 }                   -- (preferred) left blank, hidden  |hl-Ignore|
+    G.Error = { fg = C.error }                    -- (preferred) any erroneous construct
+    G.Todo = { bg = C.yellow.dim, fg = C.black0 } -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
     G.Note = { fg = C.black0, bg = C.info }
     -- What are these?
     G.qfLineNr = { fg = C.gray4 }
     G.qfFileName = { fg = C.blue1 }
-    G.htmlH1 = { fg = C.sandy.base, bold = true }
+    G.htmlH1 = { fg = C.yellow.base, bold = true }
     G.htmlH2 = { fg = C.light_blue.base }
     G.Link = { fg = C.blue1, underline = true }
     G.CodeBlock = { bg = C.bg_float, fg = C.fg }
@@ -151,32 +151,32 @@ function M.get_groups()
     G.NormalSB = { fg = C.fg_sidebar, bg = C.bg_sidebar }           -- normal text in sidebar
     G.NormalFloat = { fg = C.fg_float, bg = C.bg_float }            -- Normal text in floating windows.
     G.FloatBorder = { fg = C.fg_float_border, bg = C.bg_float_border }
-    G.FloatTitle = { fg = C.sandy.base }
-    G.Pmenu = { bg = C.bg_popup }                                                       -- Popup menu: normal item.
-    G.PmenuSel = { bg = C.bg_selected }                                                 -- Popup menu: selected item.
-    G.PmenuSbar = { bg = C.gray2 }                                                      -- Popup menu: scrollbar.
-    G.PmenuThumb = { bg = C.gray2, fg = C.gray2 }                                       -- Popup menu: Thumb of the scrollbar.
-    G.Question = { fg = C.info }                                                        -- |hit-enter| prompt and yes/no questions
-    G.QuickFixLine = { bg = C.bg_visual, bold = true }                                  -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
-    G.Search = { bg = C.bg_visual, fg = C.sandy.bright, bold = true, underline = true } -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
-    G.IncSearch = { bg = C.sandy.base, fg = C.bg_visual, bold = true }                  -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
+    G.FloatTitle = { fg = C.yellow.base }
+    G.Pmenu = { bg = C.bg_popup }                                                        -- Popup menu: normal item.
+    G.PmenuSel = { bg = C.bg_selected }                                                  -- Popup menu: selected item.
+    G.PmenuSbar = { bg = C.gray2 }                                                       -- Popup menu: scrollbar.
+    G.PmenuThumb = { bg = C.gray2, fg = C.gray2 }                                        -- Popup menu: Thumb of the scrollbar.
+    G.Question = { fg = C.info }                                                         -- |hit-enter| prompt and yes/no questions
+    G.QuickFixLine = { bg = C.bg_visual, bold = true }                                   -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
+    G.Search = { bg = C.bg_visual, fg = C.yellow.bright, bold = true, underline = true } -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
+    G.IncSearch = { bg = C.yellow.base, fg = C.bg_visual, bold = true }                  -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     G.CurSearch = { link = 'IncSearch' }
-    G.SpecialKey = { fg = C.gray5 }                                                     -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
-    G.SpellBad = { sp = C.error, undercurl = true }                                     -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
-    G.SpellCap = { sp = C.warning, undercurl = true }                                   -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
-    G.SpellLocal = { sp = C.info, undercurl = true }                                    -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
-    G.SpellRare = { sp = C.hint, undercurl = true }                                     -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
-    G.StatusLine = { fg = C.fg_sidebar, bg = C.bg_statusline }                          -- status line of current window
-    G.StatusLineNC = { fg = C.gray4, bg = C.bg_statusline }                             -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
-    G.TabLine = { bg = C.bg_statusline, fg = C.fg }                                     -- tab pages line, not active tab page label
-    G.TabLineFill = { bg = C.black0, fg = C.none }                                      -- tab pages line, where there are no labels
-    G.TabLineSel = { fg = C.fg_bright, bg = C.bg }                                      -- tab pages line, active tab page label
-    G.Title = { fg = C.fg_bright, bold = true }                                         -- titles for output from ":set all", ":autocmd" etc.
-    G.Visual = { bg = C.bg_visual, bold = O.cursorline.bold }                           -- Visual mode selection
-    G.VisualNOS = { bg = C.bg_visual }                                                  -- Visual mode selection when vim is "Not Owning the Selection".
-    G.WarningMsg = { fg = C.warning }                                                   -- warning messages
-    G.Whitespace = { fg = C.gray4 }                                                     -- "nbsp", "space", "tab" and "trail" in 'listchars'
-    G.WildMenu = { bg = C.bg_visual }                                                   -- current match in 'wildmenu' completion
+    G.SpecialKey = { fg = C.gray5 }                                                      -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
+    G.SpellBad = { sp = C.error, undercurl = true }                                      -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
+    G.SpellCap = { sp = C.warning, undercurl = true }                                    -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
+    G.SpellLocal = { sp = C.info, undercurl = true }                                     -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
+    G.SpellRare = { sp = C.hint, undercurl = true }                                      -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
+    G.StatusLine = { fg = C.fg_sidebar, bg = C.bg_statusline }                           -- status line of current window
+    G.StatusLineNC = { fg = C.gray4, bg = C.bg_statusline }                              -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+    G.TabLine = { bg = C.bg_statusline, fg = C.fg }                                      -- tab pages line, not active tab page label
+    G.TabLineFill = { bg = C.black0, fg = C.none }                                       -- tab pages line, where there are no labels
+    G.TabLineSel = { fg = C.fg_bright, bg = C.bg }                                       -- tab pages line, active tab page label
+    G.Title = { fg = C.fg_bright, bold = true }                                          -- titles for output from ":set all", ":autocmd" etc.
+    G.Visual = { bg = C.bg_visual, bold = O.cursorline.bold }                            -- Visual mode selection
+    G.VisualNOS = { bg = C.bg_visual }                                                   -- Visual mode selection when vim is "Not Owning the Selection".
+    G.WarningMsg = { fg = C.warning }                                                    -- warning messages
+    G.Whitespace = { fg = C.gray4 }                                                      -- "nbsp", "space", "tab" and "trail" in 'listchars'
+    G.WildMenu = { bg = C.bg_visual }                                                    -- current match in 'wildmenu' completion
     G.WinBar = { bg = C.bg_dark, fg = C.gray5 }
     G.WinBarNC = { bg = C.bg_dark, fg = C.gray4 }
 
