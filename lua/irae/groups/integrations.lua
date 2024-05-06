@@ -7,7 +7,7 @@ function M.get_groups()
     local G = {}
 
     -- Dashboard.lua
-    G.DashboardHeader = { fg = C.sandy.base, bold = true }
+    G.DashboardHeader = { fg = C.yellow.base, bold = true }
     G.DashboardFooter = { fg = C.cyan.base }
     G.DashboardCenter = { fg = C.green.base }
     G.DashboardShortCut = { fg = C.gray4, bold = true }
@@ -25,7 +25,7 @@ function M.get_groups()
     G.DiffviewNormal = { bg = C.bg_dark, fg = C.fg }
     G.DiffviewStatusLine = { bg = C.black0 }
     G.DiffviewFilePanelTitle = { fg = C.light_blue.base, bold = true }
-    G.DiffviewFolderSign = { fg = C.sandy.dim }
+    G.DiffviewFolderSign = { fg = C.yellow.dim }
     G.DiffviewFolderName = { bg = C.bg_dark, fg = C.blue1 }
 
     -- Gitsigns.
@@ -41,16 +41,16 @@ function M.get_groups()
     G.IndentBlanklineContextStart = { sp = C.white0, underline = true }
 
     -- Lazy.
-    G.LazyH1 = { fg = C.sandy.base, bold = true }
+    G.LazyH1 = { fg = C.yellow.base, bold = true }
     G.LazyButtonActive = { link = 'LazyH1' }
     G.LazyButton = { fg = C.white0 }
-    G.LazySpecial = { fg = C.sandy.base }
+    G.LazySpecial = { fg = C.yellow.base }
     G.LazyProgressDone = { fg = C.green.bright }
     G.LazyProgressTodo = { fg = C.gray4 }
-    G.LazyCommitType = { fg = C.sandy.base }
+    G.LazyCommitType = { fg = C.yellow.base }
 
     -- Leap.
-    G.LeapLabelPrimary = { bg = C.sandy.dim, fg = C.black0, bold = true }
+    G.LeapLabelPrimary = { bg = C.yellow.dim, fg = C.black0, bold = true }
     if O.leap.dim_backdrop then G.LeapBackdrop = { fg = C.gray4 } end
 
     -- LSP Signature.
@@ -61,7 +61,7 @@ function M.get_groups()
     G.SagaNormal = { bg = C.black2 }
     G.HoverBorder = { link = 'FloatBorder' }
     G.HoverNormal = { link = 'NormalFloat' }
-    G.RenameNormal = { bg = C.bg_float, fg = C.sandy.bright }
+    G.RenameNormal = { bg = C.bg_float, fg = C.yellow.bright }
     G.RenameBorder = { link = 'FloatBorder' }
     G.DiagnosticPos = { fg = C.fg }
     G.DiagnosticWord = { fg = C.fg }
@@ -74,7 +74,7 @@ function M.get_groups()
     G.SagaNormal = { bg = C.black2 }
     G.HoverBorder = { link = 'FloatBorder' }
     G.HoverNormal = { link = 'NormalFloat' }
-    G.RenameNormal = { bg = C.bg_float, fg = C.sandy.bright }
+    G.RenameNormal = { bg = C.bg_float, fg = C.yellow.bright }
     G.RenameBorder = { link = 'FloatBorder' }
     G.DiagnosticPos = { fg = C.fg }
     G.DiagnosticWord = { fg = C.fg }
@@ -103,7 +103,7 @@ function M.get_groups()
     G.NvimTreeFolderName = { fg = C.blue1 }
     G.NvimTreeOpenedFolderName = { link = 'NvimTreeFolderName' }
     G.NvimTreeEmptyFolderName = { link = 'NvimTreeFolderName' }
-    G.NvimTreeFolderIcon = { fg = C.sandy.dim }
+    G.NvimTreeFolderIcon = { fg = C.yellow.dim }
     G.NvimTreeSpecialFile = { fg = C.magenta.bright }
     G.NvimTreeRootFolder = { fg = C.gray4 }
     G.NvimTreeGitDirty = { fg = C.gray4 }
@@ -133,14 +133,14 @@ function M.get_groups()
     G.NeoTreeSymbolicLinkTarget = { link = 'NvimTreeSymlink' }
 
     -- Noice Flat.
-    G.NoiceLspProgressTitle = { fg = C.sandy.base, bg = C.bg, bold = true }
+    G.NoiceLspProgressTitle = { fg = C.yellow.base, bg = C.bg, bold = true }
     G.NoiceLspProgressClient = { fg = C.gray4, bg = C.bg }
     G.NoiceLspProgressSpinner = { fg = C.cyan.bright, bg = C.bg }
     G.NoiceFormatProgressDone = { bg = C.green.bright, fg = C.black0 }
     G.NoiceFormatProgressTodo = { bg = C.gray5, fg = C.black0 }
     G.NoiceCmdline = { bg = C.bg_dark, fg = C.fg }
-    G.NoiceCmdlineIcon = { bg = C.bg_float, fg = C.sandy.base }
-    G.NoiceCmdlineIconSearch = { bg = C.bg_dark, fg = C.sandy.base }
+    G.NoiceCmdlineIcon = { bg = C.bg_float, fg = C.yellow.base }
+    G.NoiceCmdlineIconSearch = { bg = C.bg_dark, fg = C.yellow.base }
     G.NoicePopupBorder = { fg = C.black0, bg = C.bg_float }
     G.NoiceCmdlinePopupBorder = { link = 'NoicePopupBorder' }
     G.NoiceCmdlinePopupBorderSearch = { link = 'NoicePopupBorder' }
@@ -151,7 +151,7 @@ function M.get_groups()
         G.NoiceCmdline = { bg = C.bg, fg = C.cyan.base }
         G.NoiceCmdlinePopup = { bg = C.bg }
         G.NoicePopupBorder = { bg = C.bg, fg = C.cyan.base }
-        G.NoiceCmdlineIcon = { bg = C.bg, fg = C.sandy.bright }
+        G.NoiceCmdlineIcon = { bg = C.bg, fg = C.yellow.bright }
     end
 
     -- Nvim cmp.
@@ -170,13 +170,13 @@ function M.get_groups()
     G.CmpItemKindFunction = { link = 'Function' }
     G.CmpItemKindStruct = { link = 'Type' }
     G.CmpItemKindClass = { link = 'Type' }
-    G.CmpItemKindModule = { fg = C.sandy.dim }
+    G.CmpItemKindModule = { fg = C.yellow.dim }
     G.CmpItemKindOperator = { link = 'Operator' }
     G.CmpItemKindVariable = { fg = C.cyan.base }
     G.CmpItemKindFile = { fg = C.blue1 }
     G.CmpItemKindUnit = { link = 'Constant' }
     G.CmpItemKindSnippet = { fg = C.blue1 }
-    G.CmpItemKindFolder = { fg = C.sandy.dark }
+    G.CmpItemKindFolder = { fg = C.yellow.dark }
     G.CmpItemKindMethod = { link = 'Function' }
     G.CmpItemKindValue = { link = 'Constant' }
     G.CmpItemKindEnumMember = { link = 'Type' }
@@ -200,7 +200,7 @@ function M.get_groups()
     G.DapUIStepBack = { fg = C.blue3, bold = true }
     G.DapUIValue = { fg = C.magenta.bright }
     G.DapUIWatchesValue = { fg = C.green.bright }
-    G.DapUIType = { fg = C.sandy.base }
+    G.DapUIType = { fg = C.yellow.base }
     G.DapUIFloatBorder = { fg = C.border_nb, bg = C.bg }
     G.DapUIFloatNormal = { bg = C.bg }
     G.DapUILineNumber = { fg = C.green.bright }
@@ -234,8 +234,8 @@ function M.get_groups()
     G.TelescopeResultsNormal = { bg = C.bg }
     G.TelescopePreviewNormal = { bg = C.bg }
     G.TelescopePreviewLine = { bg = C.gray2 }
-    G.TelescopeSelection = { bg = C.bg, fg = C.sandy.bright, bold = false }
-    G.TelescopeSelectionCaret = { fg = C.sandy.bright, bg = C.bg, bold = true }
+    G.TelescopeSelection = { bg = C.bg, fg = C.yellow.bright, bold = false }
+    G.TelescopeSelectionCaret = { fg = C.yellow.bright, bg = C.bg, bold = true }
     G.TelescopePreviewTitle = { fg = C.white0, bg = C.bg, bold = true }
     G.TelescopeResultsTitle = { fg = C.white0, bg = C.bg, bold = true }
     G.TelescopePromptTitle = { fg = C.white0, bg = C.bg, bold = true }
@@ -246,7 +246,7 @@ function M.get_groups()
     G.TelescopePreviewBorder = { fg = C.white0, bg = C.bg }
     G.TelescopeMatching = { bold = true }
     G.TelescopePromptPrefix = { bg = C.bg, fg = C.light_blue.bright }
-    G.TelescopeMultiIcon = { fg = C.sandy.bright, bg = C.bg, bold = true }
+    G.TelescopeMultiIcon = { fg = C.yellow.bright, bg = C.bg, bold = true }
     G.TelescopeMultiSelection = { bg = C.bg }
 
     -- Telescope Flat.
@@ -255,8 +255,8 @@ function M.get_groups()
         G.TelescopePromptNormal = { bg = C.black2 }
         G.TelescopeResultsNormal = { bg = C.bg_float }
         G.TelescopePreviewNormal = { bg = C.bg_float }
-        G.TelescopeSelection = { bg = C.bg_float, fg = C.sandy.bright }
-        G.TelescopeSelectionCaret = { fg = C.sandy.bright, bg = C.bg_float, bold = true }
+        G.TelescopeSelection = { bg = C.bg_float, fg = C.yellow.bright }
+        G.TelescopeSelectionCaret = { fg = C.yellow.bright, bg = C.bg_float, bold = true }
         G.TelescopePreviewTitle = { bg = C.blue2, fg = C.black0, bold = true }
         G.TelescopeResultsTitle = { bg = C.light_blue.base, fg = C.black0, bold = true }
         G.TelescopePromptTitle = { bg = C.light_blue.base, fg = C.black0, bold = true }
@@ -265,7 +265,7 @@ function M.get_groups()
         G.TelescopePromptBorder = { bg = C.black2, fg = C.black0 }
         G.TelescopeResultsBorder = { bg = C.bg_float, fg = C.black0 }
         G.TelescopePreviewBorder = { bg = C.bg_float, fg = C.black0 }
-        G.TelescopeMultiIcon = { fg = C.sandy.bright, bg = C.bg_float, bold = true }
+        G.TelescopeMultiIcon = { fg = C.yellow.bright, bg = C.bg_float, bold = true }
         G.TelescopeMultiSelection = { bg = C.bg_float }
         G.TelescopePromptPrefix = { bg = C.black2, fg = C.light_blue.bright }
         G.TelescopePreviewLine = { bg = C.gray1 }
@@ -352,7 +352,7 @@ function M.get_groups()
     G['@markup.environment'] = { link = 'Macro' }
     G['@markup.environment.name'] = { link = 'Type' }
     G['@markup.heading'] = { link = 'Title' }
-    G['@markup.heading.1'] = { fg = C.sandy.base, bold = true }
+    G['@markup.heading.1'] = { fg = C.yellow.base, bold = true }
     G['@markup.heading.2'] = { fg = C.light_blue.base, bold = true }
     G['@markup.heading.3'] = { fg = C.magenta.base, bold = true }
     G['@markup.heading.4'] = { fg = C.green.base }
@@ -361,7 +361,7 @@ function M.get_groups()
     G['@markup.italic'] = { italic = true }
     G['@markup.list'] = { link = '@operator' }
     G['@markup.list.checked'] = { link = 'Field' }
-    G['@markup.list.markdown'] = { fg = C.sandy.base, bold = true }
+    G['@markup.list.markdown'] = { fg = C.yellow.base, bold = true }
     G['@markup.list.unchecked'] = { fg = C.fg }
     G['@markup.link'] = { fg = C.cyan.base }
     G['@markup.link.label'] = { link = 'SpecialChar' }
@@ -417,10 +417,10 @@ function M.get_groups()
     G['@diff.delta'] = { link = 'DiffChange' }
     G['@character'] = { link = 'Character' }
     G['@character.special'] = { link = 'SpecialChar' }
-    G['@string.special'] = { fg = C.sandy.base } -- For escape characters within a string.
-    G['@tag'] = { fg = C.blue1 }                 -- Tags like html tag names.
-    G['@tag.delimiter'] = { fg = C.fg }          -- Tag delimiter like `<` `>` `/`
-    G['@tag.attribute'] = { fg = C.sandy.base }  -- Tag attribute like `id` `class`
+    G['@string.special'] = { fg = C.yellow.base } -- For escape characters within a string.
+    G['@tag'] = { fg = C.blue1 }                  -- Tags like html tag names.
+    G['@tag.delimiter'] = { fg = C.fg }           -- Tag delimiter like `<` `>` `/`
+    G['@tag.attribute'] = { fg = C.yellow.base }  -- Tag attribute like `id` `class`
     G['@constant'] = { link = 'Constant' }
     G['@number'] = { link = 'Constant' }
     G['@float'] = { link = 'Constant' }
@@ -432,7 +432,7 @@ function M.get_groups()
     G['@class'] = { link = 'Keyword' }
     G['@include'] = { link = 'Include' }
     G['@macro'] = { link = 'Macro' }
-    G['@module'] = { fg = C.sandy.base }
+    G['@module'] = { fg = C.yellow.base }
     G['@module.builtin'] = { link = 'Builtin' }
     G['@preproc'] = { link = 'Macro' }
     G['@attribute'] = { link = 'Macro' }
@@ -445,7 +445,7 @@ function M.get_groups()
     G['@function.call'] = { link = 'Function' }
     G['@function.builtin'] = { link = 'Function' }
     G['@property.cpp'] = { fg = C.cyan.base }
-    G['@namespace'] = { fg = C.sandy.dim }
+    G['@namespace'] = { fg = C.yellow.dim }
     G['@type'] = { link = 'Type' }
     G['@type.definition'] = { link = 'Type' }
     G['@type.qualifier'] = { link = 'Keyword' }
@@ -514,7 +514,7 @@ function M.get_groups()
     G.texLstZone = { link = 'String' }
 
     -- Whichkey.
-    G.WhichKey = { fg = C.sandy.base }
+    G.WhichKey = { fg = C.yellow.base }
     G.WhichKeyFloat = { bg = C.bg_float }
     G.WhichKeyDesc = { fg = C.white0 }
     G.WhichKeyGroup = { fg = C.light_blue.bright, bold = true }
