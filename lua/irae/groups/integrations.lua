@@ -18,7 +18,7 @@ function M.get_groups()
     G.DashboardMruIcon = {}
     G.DashboardFiles = { fg = C.fg }
     G.DashboardDesc = { fg = C.green.base }
-    G.DashboardKey = { fg = C.red.base, bold = true }
+    G.DashboardKey = { fg = C.dullgreen.base, bold = true }
     G.DashboardIcon = { fg = C.green.base }
 
     -- Diffview.
@@ -183,15 +183,15 @@ function M.get_groups()
     G.CmpItemKindInterface = { link = 'Type' }
     G.CmpItemKindColor = { link = 'Constant' }
     G.CmpItemKindTypeParameter = { link = 'Type' }
-    G.CmpItemKindTabNine = { fg = C.red.base }
-    G.CmpItemKindCopilot = { fg = C.red.base }
+    G.CmpItemKindTabNine = { fg = C.dullgreen.base }
+    G.CmpItemKindCopilot = { fg = C.dullgreen.base }
 
     -- Nvim DAP.
-    G.DapBreakPoint = { fg = C.red.bright }
+    G.DapBreakPoint = { fg = C.dullgreen.bright }
 
     -- Nvim DAP UI.
     G.DapUINormal = { bg = C.bg_float }
-    G.DapUIStop = { fg = C.red.bright, bold = true }
+    G.DapUIStop = { fg = C.dullgreen.bright, bold = true }
     G.DapUIRestart = { fg = C.green.bright, bold = true }
     G.DapUIPlayPause = { fg = C.green.bright, bold = true }
     G.DapUIStepInto = { fg = C.blue2, bold = true }

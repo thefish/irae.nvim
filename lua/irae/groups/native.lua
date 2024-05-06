@@ -13,7 +13,7 @@ function M.get_groups()
 
     -- SYNTAX
 
-    G.Constant = { fg = C.magenta.bright } -- (preferred) any constant
+    G.Constant = { fg = C.dullgreen.base } -- (preferred) any constant
     G.Number = { link = 'Constant' }       --   a number constant: 234  0xff
     G.Boolean = { link = 'Number' }        --  a boolean constant: TRUE  false
     G.Float = { link = 'Number' }          --    a floating point constant: 2.3e10
@@ -34,7 +34,7 @@ function M.get_groups()
     G.Repeat = { link = 'Keyword' }                                --   for, do, while, etc.
     G.Label = { link = 'Keyword' }                                 --    case, default, etc.
     G.Operator = { fg = C.fg }                                     -- "sizeof", "+", "*", etc.
-    G.Macro = { fg = C.red.base }                                  -- same as Define
+    G.Macro = { fg = C.dullgreen.base }                            -- same as Define
     G.Exception = { link = 'Macro' }                               --  try, catch, throw
     G.PreProc = { link = 'Macro' }                                 -- (preferred) generic preprocessor
     G.Include = { link = 'Macro' }                                 --  preprocessor #include
@@ -84,8 +84,8 @@ function M.get_groups()
     G['@text.literal.markdown_inline'] = { bg = C.black0, fg = C.blue1 }
     G['@text.literal.markdown'] = { link = 'Normal' }
     G['helpCommand'] = { bg = C.black0, fg = C.blue1 }
-    G.debugPC = { bg = C.bg_sidebar }         -- used for highlighting the current line in terminal-debug
-    G.debugBreakpoint = { fg = C.red.bright } -- used for breakpoint colors in terminal-debug
+    G.debugPC = { bg = C.bg_sidebar }               -- used for highlighting the current line in terminal-debug
+    G.debugBreakpoint = { fg = C.dullgreen.bright } -- used for breakpoint colors in terminal-debug
 
     -- LANGUAGE SERVER PROTOCOL
 
@@ -138,7 +138,7 @@ function M.get_groups()
     G.FoldColumn = { bg = C.bg_fold, fg = C.fg_fold }               -- 'foldcolumn'
     G.SignColumn = { bg = C.bg_sidebar, fg = C.fg_sidebar }         -- column where |signs| are displayed
     G.SignColumnSB = { bg = C.bg_sidebar, fg = C.fg_sidebar }       -- column where |signs| are displayed
-    G.Substitute = { bg = C.red.base, fg = C.bg_dark }              -- |:substitute| replacement text highlighting
+    G.Substitute = { bg = C.dullgreen.base, fg = C.bg_dark }        -- |:substitute| replacement text highlighting
     G.LineNr = { fg = C.fg_sidebar }                                -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
     G.MatchParen = { underline = true, bold = true, sp = C.white1 } -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     G.ModeMsg = { fg = C.fg, bold = true }                          -- 'showmode' message (e.g., "-- INSERT -- ")
