@@ -111,7 +111,7 @@ require 'irae' .setup {
 
 # Acknowledgements
 
-- [twerth/ir_black](https://github.com/twerth/ir_black) Todd Werth who started it.
+- [twerth/ir_black]
 - [AlexvZyl/nordic.nvim](https://github.com/AlexvZyl/nordic.nvim) lua code framework and general idea.
 - [folke/tokyonight](https://github.com/folke/tokyonight.nvim) served as an excellent example and template to create a Neovim theme.
 
