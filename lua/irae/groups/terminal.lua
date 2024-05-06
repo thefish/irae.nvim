@@ -6,12 +6,12 @@ function M.get_groups()
 
     G.terminal_color_0 = C.black0
     G.terminal_color_8 = C.gray2
-    G.terminal_color_1 = C.red.base
-    G.terminal_color_9 = C.red.bright
+    G.terminal_color_1 = C.dullgreen.base
+    G.terminal_color_9 = C.dullgreen.bright
     G.terminal_color_2 = C.green.base
     G.terminal_color_10 = C.green.bright
-    G.terminal_color_3 = C.sandy.base
-    G.terminal_color_11 = C.sandy.bright
+    G.terminal_color_3 = C.yellow.base
+    G.terminal_color_11 = C.yellow.bright
     G.terminal_color_4 = C.blue0
     G.terminal_color_12 = C.blue2
     G.terminal_color_5 = C.magenta.base
