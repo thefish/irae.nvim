@@ -58,9 +58,9 @@ local palette = {
         dim = '#194d33',
     },
     sandy = {
-        base = '#deb893',
-        bright = '#deb893',
-        dim = '#886a4e',
+        base = '#fff0c6',
+        bright = '#ffd864',
+        dim = '#dfb946',
     },
     light_blue = {
         base = '#6699cc',
@@ -68,9 +68,9 @@ local palette = {
         dim = '#50759b',
     },
     yellow = {
-        base = '#fff0c6',
-        bright = '#ffd864',
-        dim = '#dfb946',
+        base = '#deb893',
+        bright = '#deb893',
+        dim = '#886a4e',
     },
     green = {
         base = '#A3BE8C',
